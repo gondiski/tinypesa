@@ -2,7 +2,7 @@ require_relative 'lib/tinypesa/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "tinypesa"
-  spec.version       = 0.1.0
+  spec.version       = Tinypesa::VERSION
   spec.authors       = ["Enoch Otieno"]
   spec.email         = ["enochotieno@rocketmail.com"]
 
@@ -20,6 +20,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec","~> 3.2"
   spec.add_dependency "httparty"
   spec.add_dependency "dotenv"
+  spec.post_install_message = "Power up your payments!"
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
   spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
