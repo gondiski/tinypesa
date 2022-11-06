@@ -15,8 +15,8 @@ Gem::Specification.new do |spec|
   spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/gondiski/tinypesa."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = "https://github.com/gondiski/tinypesa"
+  spec.metadata["changelog_uri"] = "https://github.com/gondiski/changelog.md"
   spec.add_development_dependency "rspec","~> 3.2"
   spec.add_dependency "httparty"
   spec.add_dependency "dotenv"
