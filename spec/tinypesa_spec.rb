@@ -2,18 +2,18 @@ require 'tinypesa'
 
 describe Tinypesa::Pay do
   it "Send an stk prompt" do
-    expect(Tinypesa::Pay.stk(10.0,+254723347380)).to eql("Amount successfully paid to vendor")
+    expect(Tinypesa::Pay.stk(amount,number)).to eql("Amount successfully paid to vendor")
   end
 
   it "Confirm the phone number is a string" do
-    expect(Tinypesa::Pay.stk(10.0,+254723347380)).to eql(number.is_str?)
+    expect(Tinypesa::Pay.stk(amount,number.kind_of? String)).to eql(true)
   end
 
   it "Confirm the amount is a decimal value" do
-    expect(Tinypesa::Pay.stk(1.0,+254720123456)).to eql(amount.is_decimal?)
+    expect(Tinypesa::Pay.stk(amount.kind_of? Integer, number)).to eql(true)
   end
 
   it "Confirm the amount is not a negative number" do
-    expect(Tinypesa::Pay.stk(-12.00,+245723347380)).to eql(amount.is_negative?)
+    expect(Tinypesa::Pay.stk(amount.negative?,number)).to eql(false)
   end
 end
