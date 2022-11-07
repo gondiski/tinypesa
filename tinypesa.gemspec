@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Make quick payments using Tinypesa's API.}
   spec.description   = %q{This Tinypesa gem allows you to receive payments by using a username for your business and asking the client to make a payment using an STK push prompt.}
-  spec.homepage      = "https://github.com/gondiski/tinypesa."
+  spec.homepage      = "https://tinypesa.com/developers/docs/1.0/overview"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
